@@ -1,7 +1,11 @@
-resolver: lts-11.7
+resolver: lts-11.13
 
 packages:
 - '.'
+- location:
+    git: https://github.com/haskell-distributed/distributed-process-systest.git
+    commit: b4a6b646adb6c81725ddac4babcfc21b86944d98
+  extra-dep: true
 
 extra-deps:
 - network-transport-inmemory-0.5.1  # snapshot 0.5.2 in lts-7.18
